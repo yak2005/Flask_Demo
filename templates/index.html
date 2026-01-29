@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My First Project</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<h1>This is my first project</h1>
+
+<form method="post">
+    <input type="text" name="number">
+    <button type="submit">Submit</button>
+</form>
+
+{% if pred %}
+    <h1>The text is</h1>
+    <p>{{ pred }}</p>
+{% endif %}
+
+</body>
+</html>
